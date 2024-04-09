@@ -1,0 +1,134 @@
+.formBackGround {
+    position: absolute;
+    background-color: white;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.loginBackSize {
+    width: 25%;
+    height: 70%;
+}
+
+.registrationBackSize {
+    width: 25%;
+    height: 80%;
+}
+
+.updateBackSize {
+    width: 50%;
+    height: auto;
+}
+
+.updateCourseBackSize {
+    width: 50%;
+    height: 80%;
+}
+
+.backButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem 0 0 1.5rem;
+    /*border: solid 1px black;
+    border-radius: 2rem;*/
+    cursor: pointer;
+}
+
+.homeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem 1.5rem 0 0;
+    /*border: solid 1px black;
+    border-radius: 2rem;*/
+    cursor: pointer;
+}
+
+.formButton {
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 1rem;
+    border: solid 1px;
+    font-weight: bold;
+}
+
+.generalForm {
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: medium;
+}
+
+.loginFormSize {
+    height: 50%;
+    width: 65%;
+}
+
+.registrationFormSize {
+    height: 57%;
+    width: 65%;
+}
+
+.updateFormSize {
+    height: 65%;
+    width: 65%;
+}
+
+.labeledInput {
+    width: 100%;
+    align-items: flex-end;
+}
+
+input {
+    border-width: 0 0 1px 0;
+    width: inherit;
+    height: 2rem;
+    font-size: medium;
+    background-color: transparent;
+}
+
+input:focus{
+    outline-width: 0;
+    border-color: orange;
+}
+
+.sentence {
+    text-align: center;
+}
+
+.formRedirect {
+    font-size: small;
+    text-decoration: underline;
+}
+
+.formRedirect:hover {
+    color: #FF5B22;
+}
+
+@media screen and (max-height:700px) {
+    .defaultSettings{
+        height: 700px !important;
+    }
+    .loginBackSize{
+        height: 490px !important;
+    }
+    .registrationBackSize{
+        height: 560px !important;
+    }
+    .updateCourseBackSize {
+        height: 700px !important;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .defaultSettings{
+        width: 300px !important;
+    }
+    .loginBackSize{
+        width: 240px !important;
+    }
+    .registrationBackSize{
+        width: 240px !important;
+    }
+}

@@ -1,0 +1,59 @@
+#aboutPage {
+    flex-direction: column;
+}
+
+#teamImage {
+    width: 15rem;
+    height: 15rem;
+    background-color: lightgray;
+    border-radius: 10rem;
+}
+
+#aboutInfo {
+    flex-direction: column;
+    text-align: center;
+}
+
+#description {
+    width: 75%;
+    text-align: center;
+}
+
+#contactButton {
+    width: 8rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    border: solid 1px;
+    font-weight: bold;
+    color: black;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:800px) {
+    #teamImage {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-height:600px) {
+    #aboutPage {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-height:600px) and (max-width: 600px){
+    #teamImage {
+        display: none;
+    }
+}
+
+@media screen and (max-height:400px) and (max-width: 800px){
+    #aboutPage {
+        height: 100%;
+    }
+}

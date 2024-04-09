@@ -1,0 +1,80 @@
+nav {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(0.5px) !important;
+}
+
+#contactMain {
+    flex-direction: column;
+    background-image: url('../contents/images/map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#contactContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 35rem;
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    color: black;
+    flex-direction: column;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    text-align: center;
+}
+
+.information {
+    font-size: large !important;
+    font-weight: bold;
+}
+
+a.information:hover {
+    border: solid #FF9130;
+    border-width: 0 0 2px 0;
+}
+
+@media screen and (max-width:500px) {
+    #contactContainer {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #contactContainer {
+        width: 100%;
+    }
+
+    .contactInfo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .contactInfo {
+        flex-direction: column;
+        justify-content: center;
+    }
+    i {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-height:600px) {
+    #contactContainer {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-height:450px) {
+    #contactContainer {
+        height: 20rem;
+    }
+}

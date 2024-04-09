@@ -1,0 +1,165 @@
+nav {
+    grid-template-columns: 1fr 4fr 3fr;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    height: 4rem;
+    font-size: medium;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    z-index: 1;
+}
+
+.navA{
+    font-weight: bold;
+}
+
+#leftNav {
+    margin-left: 1rem;
+}
+
+.wiki, .saw {
+    font-size: x-large !important;
+}
+
+#middleNav {
+    justify-content: space-evenly;
+}
+
+.navA:hover {
+    border: solid #FF9130;
+    border-width: 0 0 2px 0;
+}
+
+#rightNav {
+    justify-content: flex-end;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+form {
+    margin-right: 0.5rem;
+}
+
+.navButton{
+    height: 2.8rem;
+    width: auto;
+    background-color: black;
+    border: 1px solid #2d2f31;
+    color: white;
+    flex: 0 1 6rem;
+    margin: 0 0 0 0.8rem;
+    font-weight: bold;
+}
+
+.navButton:hover{
+    background-color: rgb(236, 236, 236);
+    color: black;
+}
+
+.navIcon {
+    margin: 0 0.8rem 0 0.8rem;
+}
+
+.navIcon:hover{
+    color: #FF9130
+}
+
+#searchContainer {
+    flex-direction: row;
+}
+
+#searchIcon {
+    padding: 0.5rem;
+}
+
+#searchBar {
+    border-width: 0;
+    margin-left: 0.5rem;
+    font-size: medium;
+    display: none;
+    background-color: transparent;
+}
+
+.searchButton{
+    border:0;
+    background-color: transparent;
+    color: black;
+}
+
+#searchBar:focus{
+    outline-width: 0;
+    border-color: orange;
+}
+
+#logContainer {
+    flex-direction: row;
+    width: 12rem;
+}
+
+/* Codice per il bottone del menu */
+.dropdown {
+    display: none;
+    position: relative;
+}
+
+#dropButton {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+#dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+#dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#dropdownContent a:hover {
+    background-color: #ddd;
+}
+
+/* Media query per la versione responsive della navbar */
+@media screen and (max-width: 900px) {
+    nav {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #middleNav {
+        display: none;
+    }
+    
+    .dropdown {
+        display: inline-block;
+        margin-right: 0.3rem;
+    }
+
+    .navA {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .navButton{
+        height: 2rem;
+        font-size: medium !important;
+    }
+
+    form {
+        margin-right: -0.5rem;
+    }
+}
+

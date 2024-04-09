@@ -1,0 +1,49 @@
+#title {
+    margin-top: 2.5rem;
+}
+
+#subtitle {
+    margin: 0 0 0.5rem 0;
+}
+
+img {
+    height: 90px;
+    width: 90px;
+    padding-bottom: 0.5rem;
+}
+
+.upLabeledInput {
+    display: inline;
+    text-align: left;
+    margin: 0.1rem 0 0.1rem 0;
+}
+
+#newsletter {
+    width: 10%;
+    height: 1rem;
+}
+
+#changeButton {
+    margin-top: 1rem;
+}
+
+#firstname, #lastname {
+    width: 90%;
+}
+
+#bio {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .updateBackSize {
+        height: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 210px) {
+    #changeButton {
+        height: 2.2rem;
+    }
+}

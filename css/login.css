@@ -1,0 +1,38 @@
+#forgotPsw {
+    color: grey;
+    font-size: small;
+    text-align: right;
+    display: block;
+    margin-top: 0.15rem;
+}
+
+#rememberme {
+    flex: 0 1rem;
+}
+
+@media screen and (max-width:1100px) {
+    .loginBackSize{
+        width: 35%;
+        height: 80%;
+    }
+ }
+
+ @media screen and (max-width:900px) {
+    .loginBackSize{
+        width: 45%;
+    }
+
+    #rememberme{
+        width: 1.5rem;
+    }
+ }
+
+@media screen and (max-width:800px) {
+    .loginBackSize{
+        width: 80%;
+    }
+
+    #rememberme{
+        width: 1rem;
+    }
+ }

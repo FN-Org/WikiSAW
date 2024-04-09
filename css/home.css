@@ -1,0 +1,189 @@
+#home1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+#homeMainImage {
+    height: 30rem;
+    width: 30rem;
+    border: solid black;
+    border-radius: 10rem;
+}
+
+.homeDescription {
+    width: 50%;
+    text-align: center;
+}
+
+#home2 {
+    flex-direction: column;
+    height: 100%;
+}
+
+.homeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+    width: 100%;
+}
+
+.homeImages {
+    height: 20rem;
+    width: 20rem;
+}
+
+#home3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3rem;
+    margin: 2rem 0 2rem 0;
+    height: 100%;
+    width: 100%;
+}
+
+.category {
+    flex-direction: column;
+}
+
+.category:hover {
+    transform: scale(1.03);
+}
+
+.categoryImage {
+    background-color: lightgrey;
+    height: 16rem;
+    width: 16rem;
+    margin-bottom: 1rem;
+}
+
+#home4 {
+    flex-direction: column;
+    background-color: #E0E0E0;
+    height: 20rem;
+}
+
+#partnersLogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.partner {
+    height: 5rem;
+    width: 5rem;
+}
+
+#partnersDescription {
+    text-align: center;
+    width: 90%;
+}
+
+.becomeTeacher {
+    padding: 0.5rem;
+}
+
+@media screen and (max-width:1200px) {
+    #home3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+     #homeMainImage {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-height:630px) {
+    #homeMainImage {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .partner {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #home1 {
+        flex-direction: column-reverse;
+    }
+
+    #homeMainImage {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .partner {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .responsiveTitle {
+        font-size: x-large;
+    }
+
+    .becomeTeacher {
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    #partnersLogos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2rem;
+        place-items: center;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .homeImages {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .categoryImage {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-height:500px) {
+    #homeMainImage {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .homeImages {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .categoryImage {
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width:400px){
+    .defaultSettings{
+        width:400px !important;
+    }
+}

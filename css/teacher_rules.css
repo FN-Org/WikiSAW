@@ -1,0 +1,46 @@
+main {
+    flex-direction: column;
+}
+
+#container {
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 65%;
+    border-radius: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#to-do {
+    margin: 3rem 0 3rem 0;
+    width: 40%;
+    border: solid 1px black;
+    border-radius: 7rem;
+    background-color: rgba(0, 0, 0, 10%);
+    text-align: center;
+    padding: 1rem;
+}
+
+#rule {
+    width: 90%;
+}
+
+#teacherLink {
+    width: 50%;
+}
+
+.teacherButton {
+    margin: 1rem 0 1rem 0;
+    width: auto !important;
+    height: auto !important;
+}
+
+@media screen and (max-width: 670px) {
+    #to-do {
+        width: 60%;
+    }
+
+    #title {
+        width: 90%;
+    }
+}

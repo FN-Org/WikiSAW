@@ -1,0 +1,142 @@
+.defaultSettings {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.defaultGrid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.defaultFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.defaultFlex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.viewport {
+    height: 100vh;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.fontXL {
+    font-size: x-large;
+}
+
+.backColor1 {
+    background-color: #A9A9A9;
+}
+
+.backColor2 {
+    background-color: #FECDA6;
+}
+
+.backColor3 {
+    background-color: #FF9130;
+}
+
+.backColor4 {
+    background-color: #FF5B22;
+}
+
+.color1 {
+    color: #A9A9A9;
+}
+
+.color2 {
+    color: #FECDA6;
+}
+
+.color3 {
+    color: #FF9130;
+}
+
+.color4 {
+    color: #FF5B22;
+}
+
+.wiki {
+    font-weight: 100;
+    color: #FF9130;
+}
+
+.saw {
+    font-weight: bold;
+    color: #FF5B22;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.error {
+    margin: 0;
+    color: red;
+}
+
+.success {
+    margin: 0;
+    color: green;
+}
+
+button {
+    cursor: pointer;
+}
+
+.start_space{
+    height:4rem;
+}
+
+.totalMargin {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.yellow {
+    color: rgb(255, 200, 0);
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.teacherButton {
+    border: solid 1px;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 2rem;
+    font-size: medium;
+}
+
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    .fontXL {
+        font-size: medium;
+    }
+}
